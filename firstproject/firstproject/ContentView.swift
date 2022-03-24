@@ -9,13 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack(alignment: .center) {
+            Image("logo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            
+            Spacer()
+            
+            HStack() {
+                Spacer()
+                Text("Hello!")
+                Spacer()
+                Text("Hello!")
+                Spacer()
+            }
+            
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            
+            
     }
 }
