@@ -17,6 +17,7 @@ struct ContentView: View {
                 Spacer()
                 Image("logo")
                 Spacer()
+                
                 HStack {
                     Spacer()
                     Image("back")
@@ -24,24 +25,29 @@ struct ContentView: View {
                     Image("back")
                     Spacer()
                 }
+                
                 Spacer()
                 Image("dealbutton")
                 Spacer()
+                
                 HStack {
                     Spacer()
                     VStack {
                         Text("Player")
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .font(.headline)
+                            .padding(.bottom, 10.0)
                         Text("0")
                             .font(.title)
-                    }.foregroundColor(.white)
+                    }.foregroundColor(Color.white)
                     Spacer()
+                    
                     VStack {
                         Text("CPU")
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .font(.headline)
+                            .padding(.bottom, 10.0)
                         Text("0")
                             .font(.title)
-                    }.foregroundColor(.white)
+                    }.foregroundColor(Color.white)
                     Spacer()
                 }
                 Spacer()
